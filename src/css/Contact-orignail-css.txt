@@ -1,0 +1,48 @@
+h2 {
+  margin-left: 2rem;
+  padding: 1rem 0;
+  text-decoration-line: underline;
+}
+h3 {
+  margin: 1.4rem 0;
+  margin-left: 2rem;
+}
+div.page-bg {
+  background-color: whitesmoke; 
+}
+div.form-bg {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: 6em;
+}
+/*
+for small viewports
+div.form-bg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}*/
+form {
+  padding-bottom: 3em;
+}
+form {
+  padding: 0rem 5rem;
+  float: left;
+  width: 70%;
+}
+section.right {
+  float: right;
+  width: 30%;
+  padding-left: 2em;
+  padding-top: 2em;
+  background-color: whitesmoke;
+}
+hr {
+  border: 5px solid black;
+}
+.clear {
+  clear: both;
+}
