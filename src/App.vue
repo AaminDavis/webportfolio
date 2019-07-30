@@ -59,11 +59,6 @@ export default {
 </script>
 
 <style lang="css" rel="preload">
-@font-face {
-  font-family: "Adamina", serif;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css?family=Adamina&display=swap);
-}
 #app {
 	font-family: "Adamina", serif;
 	-webkit-font-smoothing: antialiased;
@@ -75,11 +70,6 @@ export default {
 body{
 	padding: 0;
 	margin: 0;
-}
-@font-face {
-  font-family: "Muli", sans-serif;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css?family=Muli&display=swap);
 }
 p {
   font-family: "Muli", sans-serif;

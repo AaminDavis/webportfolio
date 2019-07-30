@@ -6,7 +6,6 @@
     </div>
     <button class="cta"><strong>LEARN MORE</strong></button>
     </div>
-    <!--<hr>-->
     <section class="about pb">
       <h3>About</h3>
       <p>Hi, I'm Aamin. I am currently a freelance Web Designer and Developer based in Pittsburgh, PA. I primarily work on front-end projects, however, I also create FullStack applications and websites. I love working on challenging projects. I'm also interested in learning new web technologies! If you are interested in hiring me, contact me at insert email.</p>
@@ -133,6 +132,7 @@ ul {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: 2em; 
+  flex-flow: wrap;
 }
 .pb {
   padding-top: 2em;
