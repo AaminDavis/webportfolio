@@ -117,7 +117,9 @@ nav {
   font-size: 1em;
   color: rgb(15, 13, 13);
 }
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:focus
+{
 	cursor: pointer;
 	/*color: black;*/
 	text-decoration: none;

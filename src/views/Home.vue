@@ -121,9 +121,9 @@ button.cta {
 }
 div.uls {
   display: flex;
-  align-items: flex-start;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
 }
 ul {
   width: 300px;

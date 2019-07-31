@@ -43,9 +43,9 @@
         </button>
       </form>
       <section class="right">
-        <h4>Call Me</h4>
+        <p>Call Me</p>
         <p>412-000-0000</p>
-        <h4>Email Me</h4>
+        <p>Email Me</p>
         <p>ME@gmail.com</p>
       </section>
     </div>
@@ -114,7 +114,7 @@ hr {
   }
   section.right {
   display: inline;
-  width: 50%;
+  width: 30%;
 }
 
 }

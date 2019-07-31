@@ -6,7 +6,7 @@
       <img :src="require('@/assets/img/aeScreenshot.png')" alt="Affordable Elegance, LLC">
       <p>For this project I was tasked with redesinging the clients website and asseccessing whether it would be benefitual to go choose anothe cms or continue to use the current one. I also was tasked with imporving the SEO of the site.</p>
       <button>
-        <a href="https://affordableelegancecateringllc.com/">View Site</a>
+        <a rel="preconnect" href="https://affordableelegancecateringllc.com/">View Site</a>
       </button>
     </div>
     <hr>
@@ -14,7 +14,7 @@
       <h5>Project Two</h5>
       <p>Words... Zip Code Finder</p>
       <button>
-        <a href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
+        <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
       </button>
     </div>
     <hr>
@@ -23,7 +23,7 @@
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
       <p></p>
       <button>
-        <a href="#">View Site</a>
+        <a rel="preconnect" href="#">View Site</a>
       </button>
     </div>
     <hr>
@@ -32,7 +32,7 @@
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
       <p></p>
       <button>
-        <a href="#">View Site</a>
+        <a rel="precommect" href="#">View Site</a>
       </button>
     </div>
     <hr>
@@ -41,7 +41,7 @@
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
       <p></p>
       <button>
-        <a href="#">View Site</a>
+        <a rel="preconnect" href="#">View Site</a>
       </button>
     </div>
   </section>
