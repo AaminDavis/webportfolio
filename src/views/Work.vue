@@ -21,7 +21,7 @@
     <div class="project">
       <h5>Project Three</h5>
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
-      <p></p>
+      <p>Website to showcase the work of Moses Photography.</p>
       <button>
         <a rel="preconnect" href="#">View Site</a>
       </button>

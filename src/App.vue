@@ -33,17 +33,13 @@
           <h3 class="title"><strong>Contact</strong></h3>
           <p>Email Me</p>
           <p>
-            <i class="fas fa-envelope"></i> ME@gmail.com
-          </p>
-          <p>Call Me</p>
-          <p>
-            <i class="fas fa-phone"></i> 412-000-0000
+            <i class="fas fa-envelope"></i><a href="mailto:aaminwd@gmail.com">Aaminwd@gmail.com</a>
           </p>
         </div>
       </div>
       <hr class="footer-hr">
       <div class="copyright contianer-fluid">
-        <strong>Copyright Aamin Withrow-Davis | 2019</strong>
+        <strong>Copyright <a href="mailto:aaminwd@gmail.com">Aamin Withrow-Davis</a>&copy; | 2019</strong>
       </div>
     </footer>
   </div>
@@ -96,16 +92,18 @@ h4 {
   text-transform: uppercase;
   text-align: center;
 }
+/* Page Transitions */
 .fade-enter-active, .fade-leave-active {
 	transition: opacity .2s;
 }
 .fade-enter, .fade-leave-to {
 	opacity: 0;
 }
+/* Navigation */
 nav {
   background-color: lightskyblue;
   margin: auto;
-  padding: 0 10%;
+  padding: 0 1.5em;
   padding-top: .3em;
 	overflow: hidden;
   height: 50px;
@@ -132,14 +130,15 @@ section.nav-right {
   padding-top: 5px;
 }
 section.nav-right > .nav-item:nth-child(1) {
-	margin-right: 10px;
+	margin-right: 1.5em;
 }
 section.nav-right > .nav-item:nth-child(2) {
-	margin-right: 10px;
+	margin-right: 1.5em;
 }
 section.nav-right > .router-link-exact-active {
 	border-bottom: 2px solid black;
 }
+/* Footer Content */
 footer {
 	background-color: lightskyblue;
   padding-top: 3em;
@@ -180,6 +179,10 @@ hr.footer-hr {
 	clear:both;
   margin: 0;
   color: black;
+}
+a[href^="mailto:"] {
+  color: red;
+  //font-size: 1rem;
 }
 
 /** Media Queries **/

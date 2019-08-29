@@ -43,10 +43,8 @@
         </button>
       </form>
       <section class="right">
-        <p>Call Me</p>
-        <p>412-000-0000</p>
-        <p>Email Me</p>
-        <p>ME@gmail.com</p>
+        <p>Collaborate with me:</p>
+        <p><a href="mailto:aaminwd@gmail.com">aaminwd@gmail.com</a></p>
       </section>
     </div>
     <hr class="clear"/>
@@ -100,6 +98,7 @@ section.right {
   display: none;
 }
 hr {
+  margin: 0;
   border: 5px solid black;
 }
 .clear {
@@ -120,8 +119,9 @@ hr {
 }
 @media (min-width: 992px) {
   form {
-      padding: 0rem 5rem;
+      padding: 0rem 5em;
+      max-width: 60%;
   }
 }
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {} 
 </style>
