@@ -1,24 +1,48 @@
 <template>
   <div id="app">
-    <nav class="contianer-fluid">
-      <section class="nav-left">
-        <router-link  class="navbar-brand" to="/">Aamin Davis</router-link>
-      </section>
-      <section class="nav-right">
-        <router-link class="nav-item" to="/">Home</router-link>
-        <router-link class="nav-item" to="/work">Work</router-link>
-        <router-link class="nav-item" to="/Contact">Contact</router-link>
-      </section>
+    <nav class="navbar navbar-expand-md navbar-light bg-lsb">
+      <a class="navbar-brand" href="#">Aamin Withrow-Davis</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">
+              Home
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/Work">Work</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/Resume">Resume</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/contact" tabindex="-1">Contact</router-link>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main class="App_main">
       <transition name="fade">
-    <router-view @:click.prevent />
+        <router-view @:click.prevent></router-view>
       </transition>
     </main>
     <footer>
       <div class="footer-container container-fluid">
         <div class="left">
-          <h3 class="title"><strong>Menu</strong></h3>
+          <h3 class="title">
+            <strong>Menu</strong>
+          </h3>
           <router-link to="/">
             <p>Home</p>
           </router-link>
@@ -30,16 +54,22 @@
           </router-link>
         </div>
         <div class="right">
-          <h3 class="title"><strong>Contact</strong></h3>
+          <h3 class="title">
+            <strong>Contact</strong>
+          </h3>
           <p>Email Me</p>
-          <p>
-            <i class="fas fa-envelope"></i><a href="mailto:aaminwd@gmail.com">Aaminwd@gmail.com</a>
+          <p class="container">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:aaminwd@gmail.com">Aaminwd@gmail.com</a>
           </p>
         </div>
       </div>
-      <hr class="footer-hr">
+      <hr class="footer-hr" />
       <div class="copyright contianer-fluid">
-        <strong>Copyright <a href="mailto:aaminwd@gmail.com">Aamin Withrow-Davis</a>&copy; | 2019</strong>
+        <strong>
+          &copy; 2019,
+          <a href="mailto:aaminwd@gmail.com">Aamin Withrow-Davis</a>
+        </strong>
       </div>
     </footer>
   </div>
@@ -47,31 +77,30 @@
 
 <script>
 export default {
-  name: 'app',
-  components: {
-
-  },
+  name: "app",
+  components: {}
 };
 </script>
 
 <style lang="css" rel="preload">
 #app {
-	font-family: "Adamina", serif;
-	-webkit-font-smoothing: antialiased;
+  font-family: "Adamina", serif;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-display: fallback;
-	color: #2c3e50;
-	background-color: white;
+  color: #2c3e50;
+  background-color: white;
 }
-body{
-	padding: 0;
-	margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
+i {
+  padding: 12px;
+  }
 p {
   font-family: "Muli", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-display: fallback;
   font-size: 1.1em;
   line-height: 1.15em;
   margin-bottom: 2em;
@@ -92,72 +121,72 @@ h4 {
   text-transform: uppercase;
   text-align: center;
 }
+/* Buttons*/
+button {
+  line-height: 32px;
+}
+button:hover,
+button > a:hover {
+  text-decoration: none;
+  color: #000;
+}
+button > a,
+button > strong > a {
+  color: #000;
+}
+button > strong > a:hover {
+  text-decoration: none;
+  color: #000;
+}
 /* Page Transitions */
-.fade-enter-active, .fade-leave-active {
-	transition: opacity .2s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
 }
-.fade-enter, .fade-leave-to {
-	opacity: 0;
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
-/* Navigation */
-nav {
+/*Navigation*/
+.bg-lsb {
   background-color: lightskyblue;
-  margin: auto;
-  padding: 0 1.5em;
-  padding-top: .3em;
-	overflow: hidden;
-  height: 50px;
+}
+.navbar .navbar-toggler {
+color: black;
+border-color: transparent;
 }
 .navbar-brand {
   color: black;
 }
 .nav-item {
   font-size: 1em;
-  color: rgb(15, 13, 13);
 }
-.nav-item:hover,
-.nav-item:focus
+.nav-link:hover
+.nav-link:focus
 {
 	cursor: pointer;
-	/*color: black;*/
 	text-decoration: none;
-}
-section.nav-left {
-  float: left;
-}
-section.nav-right {
-  float: right;
-  padding-top: 5px;
-}
-section.nav-right > .nav-item:nth-child(1) {
-	margin-right: 1.5em;
-}
-section.nav-right > .nav-item:nth-child(2) {
-	margin-right: 1.5em;
-}
-section.nav-right > .router-link-exact-active {
-	border-bottom: 2px solid black;
 }
 /* Footer Content */
 footer {
-	background-color: lightskyblue;
+  background-color: lightskyblue;
   padding-top: 3em;
 }
 div.footer.container {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .left {
-	width: 100%;
-	background-color: lightskyblue;
+  width: 100%;
+  background-color: lightskyblue;
   padding-top: 1em;
 }
 .right {
-	width: 100%;
-	background-color: lightskyblue;
-	padding-top: 1em;
+  width: 100%;
+  background-color: lightskyblue;
+  padding-top: 1em;
   padding-bottom: 3em;
 }
 div.left > a {
@@ -165,72 +194,74 @@ div.left > a {
   color: black;
 }
 div.copyright {
-	text-align: center;
-	padding: 1.5em 0;
-	clear: both;
+  text-align: center;
+  padding: 1.5em 0;
+  clear: both;
 }
 h3.title {
-	font-size: 1.5em;
-	padding-bottom: .55em;
-	text-decoration: underline;
-	color: black;
+  font-size: 1.5em;
+  padding-bottom: 0.55em;
+  text-decoration: underline;
+  color: black;
 }
 hr.footer-hr {
-	clear:both;
+  clear: both;
   margin: 0;
   color: black;
 }
 a[href^="mailto:"] {
-  color: red;
-  //font-size: 1rem;
+  color: #000;
+  text-decoration: underline;
 }
 
 /** Media Queries **/
 
 /*Medium Devices*/
 @media (min-width: 768px) {
-.left {
-  position: relative;
-  float: left;
-  width: 50%;
-}
-.right {
-  position: relative;
-  float: right;
-  width: 50%;
-}
-h3, h4, p {
-  text-align: initial;
-}
-p {
-  padding: 0;
-}
-div.footer-container {
-  padding: 0 3em;
-}
-div.right > p {
-  text-align: right;
-}
-div.right > h3 {
-  text-align: right;
-}
+  .left {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  .right {
+    position: relative;
+    float: right;
+    width: 50%;
+  }
+  h3,
+  h4,
+  p {
+    text-align: initial;
+  }
+  p {
+    padding: 0;
+  }
+  div.footer-container {
+    padding: 0 3em;
+  }
+  div.right > p {
+    text-align: right;
+  }
+  div.right > h3 {
+    text-align: right;
+  }
 }
 /*Large Devices*/
 @media (min-width: 992px) {
-div.footer-container {
-  padding: 0 2em;
+  div.footer-container {
+    padding: 0 2em;
+  }
+  .left {
+    float: left;
+    width: 50%;
+  }
+  .right {
+    float: right;
+    width: 50%;
+  }
 }
-.left {
-  float: left;
-  width: 50%;
-}
-.right {
-  float: right;
-  width: 50%;
-}
-} 
 /*Extra Large Devices*/
-@media (min-width: 1200px){
-
+@media (min-width: 1200px) {
+  
 }
 </style>

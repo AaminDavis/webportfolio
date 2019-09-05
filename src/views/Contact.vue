@@ -1,10 +1,9 @@
 <template>
   <div class="page-bg">
-    <h2 class="contactheading">Let's Chat</h2>
-    <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
-
     <div class="form-bg">
-      <form>
+      <form netlify>
+        <h2 class="contactheading">Let's Chat</h2>
+        <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
         <div class="form-group">
           <label for="InputName">Name</label>
           <input
@@ -29,7 +28,7 @@
           >I'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="FormControlTextarea1">Message</label> 
+          <label for="FormControlTextarea1">Message</label>
           <textarea
             class="form-control form-control-large"
             id="FormControlTextarea1"
@@ -38,16 +37,19 @@
           ></textarea>
         </div>
         <button type="submit" class="btn btn-sm">
-          Inquire
+          <strong>Inquire</strong>
           <i class="fas fa-arrow-right"></i>
         </button>
       </form>
       <section class="right">
         <p>Collaborate with me:</p>
-        <p><a href="mailto:aaminwd@gmail.com">aaminwd@gmail.com</a></p>
+        <p>
+          <a href="mailto:aaminwd@gmail.com">aaminwd@gmail.com</a>
+        </p>
+        <img class="svg" src="../assets/img/waiting-contact.svg" />
       </section>
     </div>
-    <hr class="clear"/>
+    <hr class="clear" />
   </div>
 </template>
 
@@ -61,18 +63,15 @@ export default {
 <style scoped rel="preload">
 h2.contactheading {
   font-size: 1.3em;
-  margin-left: 2rem;
   padding: 1rem 0;
   text-decoration-line: underline;
 }
 h3.formheading {
   text-align: left;
   font-size: 1em;
-  margin-left: 2rem;
-  margin-right: 20px;
 }
 div.page-bg {
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
 }
 div.form-bg {
   display: flex;
@@ -80,7 +79,7 @@ div.form-bg {
   background-color: whitesmoke;
   justify-content: space-around;
   margin: auto;
-  padding-bottom: 6em;
+  padding-bottom: 3em;
 }
 form {
   padding: 0rem 3rem;
@@ -88,14 +87,17 @@ form {
   float: left;
   width: 100%;
 }
-form > button{
+form > button {
   background-color: lightskyblue;
+  line-height: 32px;
+  padding-left: 1em;
 }
 section.right {
   float: right;
   width: 0;
   background-color: whitesmoke;
   display: none;
+  margin: auto;
 }
 hr {
   margin: 0;
@@ -108,20 +110,30 @@ hr {
 
 @media (min-width: 768px) {
   h3.formheading {
-  margin: 1.4rem 0;
-  margin-left: 2rem;
+    margin: 1.4rem 0;
+    margin-left: 2rem;
   }
   section.right {
-  display: inline;
-  width: 30%;
-}
-
-}
-@media (min-width: 992px) {
+    display: inline;
+    width: 40%;
+  }
+  img.svg {
+    max-width: 90%;
+    min-height: 200px;
+  }
   form {
-      padding: 0rem 5em;
-      max-width: 60%;
+    max-width: 560px;
   }
 }
-@media (min-width: 1200px) {} 
+@media (min-width: 992px) {
+  .form-bg {
+    margin: auto 0;
+  }
+  form {
+    padding: 0em 3em;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+}
 </style>

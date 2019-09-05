@@ -1,48 +1,76 @@
 <template>
   <section class="work">
-    <div class="project">
-      <!-- Can't have underscores in file names-->
+    <div class="container project">
+      <!-- Don't use underscores in file names-->
       <h5>Project One</h5>
-      <img :src="require('@/assets/img/aeScreenshot.png')" alt="Affordable Elegance, LLC">
-      <p>For this project I was tasked with redesinging the clients website and asseccessing whether it would be benefitual to go choose anothe cms or continue to use the current one. I also was tasked with imporving the SEO of the site.</p>
-      <button>
-        <a rel="preconnect" href="https://affordableelegancecateringllc.com/">View Site</a>
-      </button>
+      <div class="main_proj_cont">
+        <img :src="require('@/assets/img/aeScreenshot.png')" alt="Affordable Elegance, LLC Home Page" />
+        <p>For this project, I redesigned the clients' website and assessed whether it would be beneficial to continue using the current CMS or utilize a different one. I also was tasked with improving the SEO of the site.</p>
+      </div>
+      <div class="btns">
+        <button>
+          <a rel="preconnect" href="https://affordableelegancecateringllc.com/">View Site</a>
+        </button>
+        <button type="disabled" class="disabled">
+          <a rel="preconnect" href="#">View Code</a>
+        </button>
+      </div>
     </div>
-    <hr>
-    <div class="project">
+    <hr />
+    <div class="container project">
       <h5>Project Two</h5>
-      <p>Words... Zip Code Finder</p>
-      <button>
-        <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
-      </button>
+      <img src="@/assets/img/zipcodefinder-b1559.firebaseapp.com_(iPhone6_7_8Plus).png" alt="Zip Finder Wep App">
+      <p>This is a demo project that I have worked on to create a PWA using Vue.js and Ionic. I worked on this to get a better understanding of service workers, PWAs, and how the Ionic/Vue package works.</p>
+      <div class="btns">
+        <button>
+          <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
+        </button>
+        <button>
+          <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Code</a>
+        </button>
+      </div>
     </div>
-    <hr>
-    <div class="project">
+    <hr />
+    <div class="container project">
       <h5>Project Three</h5>
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
-      <p>Website to showcase the work of Moses Photography.</p>
-      <button>
-        <a rel="preconnect" href="#">View Site</a>
-      </button>
+      <p>I created this responsive web site for Moses Photography. Moses Photography is a photography studio that was created in response to overly photoshopped and edited photographs, especially of women and to demonstrate the beauty of ordinary items. To keep in line with Moses Photography, I decided to go with a minimalist design, one that emphasizes the content and its elegance.</p>
+      <div class="btns">
+        <button>
+          <a rel="preconnect" href="#">View Site</a>
+        </button>
+        <button>
+          <a rel="preconnect" href="#">View Code</a>
+        </button>
+      </div>
     </div>
-    <hr>
-    <div class="project">
+    <hr />
+    <div class="container project">
       <h5>Project Four</h5>
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
-      <p></p>
-      <button>
-        <a rel="precommect" href="#">View Site</a>
-      </button>
+      <p>Coming Soon</p>
+      <div class="btns">
+        <button>
+          <a rel="precommect" href="#">View Site</a>
+        </button>
+        <button>
+          <a rel="preconnect" href="#">View Code</a>
+        </button>
+      </div>
     </div>
-    <hr>
-    <div class="project">
+    <hr />
+    <div class="container project">
       <h5>Project Five</h5>
       <!--<img src="@/img/AE_screenshot.PNG" alt="">-->
-      <p></p>
-      <button>
-        <a rel="preconnect" href="#">View Site</a>
-      </button>
+      <p>Coming Soon</p>
+      <div class="btns">
+        <button>
+          <a rel="preconnect" href="#">View Site</a>
+        </button>
+        <button>
+          <a rel="preconnect" href="#">View Code</a>
+        </button>
+      </div>
     </div>
   </section>
 </template>
@@ -52,14 +80,19 @@ export default {
   name: "Work",
   components: {}
 };
-</script>
+</script> 
 
 <style scoped>
 section.work {
   padding: 2em 0;
 }
 div.project {
-  margin: 0;
+  margin: 0 auto;
+}
+div.btns {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
 }
 h5 {
   padding-bottom: 0.5em;
@@ -73,13 +106,49 @@ p {
 }
 button {
   background-color: lightskyblue;
-  color: Black;
-  border: 1px solid lemonchiffon;
+  border: 1px solid #000;
   width: 8em;
   height: 3em;
   border-radius: 2em;
   margin: auto;
-  display: flex;
-  justify-content: center;
+}
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+button > a:hover {
+  text-decoration: none;
+  color: #000;
+} 
+/*
+button:disabled,
+button.disabled,
+button.disabled > a {
+  opacity: .7;
+  cursor: none;
+}
+*/
+/* Add grid to section in order to make it responsive */
+
+@media (min-width: 768px) {
+  h5 {
+    padding-bottom: 1em;
+  }
+  img {
+    max-width: 60%;
+    margin-right: 20px;
+  }
+  div.main_proj_cont {
+    display: flex;
+    align-content: space-between;
+  }
+  .btns {
+    padding: 2em 0em;
+  }
+  hr {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
 }
 </style>

@@ -1,23 +1,26 @@
 <template>
   <div class="background">
     <div class="full">
-    <div class="after">
-    <h1 class="header">Meet Aamin, a Web Designer and Developer based out of Pittsburgh, PA.</h1>
-    </div>
-    <button class="cta"><strong>LEARN MORE</strong></button>
+      <div class="after">
+        <h1 class="header">A Yinzer, Obsessed with Web Design and Development</h1>
+      </div>
+      <button class="cta">
+        <router-link to="/work"><strong>View Work</strong></router-link>
+      </button>
     </div>
     <section class="about pb">
       <h3>About</h3>
-      <p>Hi, I'm Aamin. I am currently a freelance Web Designer and Developer based in Pittsburgh, PA. I primarily work on front-end projects, however, I also create FullStack applications and websites. I love working on challenging projects. I'm also interested in learning new web technologies! If you are interested in hiring me, contact me at insert email.</p>
+      <p>Hi, I'm Aamin. I am currently a freelance Web Designer and Developer based in Pittsburgh, PA. I primarily work on front-end projects, however, I also create full-stack web apps and websites. I love working on challenging projects. I'm also interested in learning new web technologies. If you are interested in hiring me, contact me <a href="mailto:aaminwd@gmail.com">via email.</a></p>
       <h3>Services</h3>
       <h4>UX/UI Design</h4>
       <p>Before starting to build applications and web sites, I first work on creating the information structure and layout, going through numerous iterations as needed. Once that is complete I then start working on creating and functional and alluring user experience.</p>
       <h4>Front-End Development</h4>
       <p>After I finalize the UX/UI design, I produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
-      <h4>Fullstack Development</h4>
-      <p>For some applications and websites, I create both the front-end and the back-end. The combination of both the front-end, back-end, databases, and several other skillsets to create an all-inclusive application/website.</p>
+      <h4>Full-stack Development</h4>
+      <p>For some applications and websites, I create both the front-end and back-end. The combination of both the front-end, back-end, databases, and several other skill sets to create an all-inclusive application/website.</p>
+      <button class="secondary"><a href="#">View Resume</a></button>
     </section>
-    <hr>
+    <hr />
     <section class="skills pb">
       <h3>Skills</h3>
       <div class="uls">
@@ -75,11 +78,13 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped rel="preload">
+div.background {
+  margin: auto;
+}
 div.full {
-  height: 100vh;
-  background-image: url('../assets/img/joshua-aragon-edited-small.jpg');
+  height: 60vh;
+  background-image: url("../assets/img/joshua-aragon-edited-small.jpg");
   background-attachment: fixed;
   opacity: 0.9;
   filter: alpha(opacity=9);
@@ -106,19 +111,37 @@ h1.header {
   align-self: center;
   color: white;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
 }
-button.cta {
+.cta {
   align-self: center;
+  justify-self: center;
   position: relative;
   height: 50px;
+  width: 180.5px;
   padding: 0 1em;
+  border-radius: 20px;
   background-color: lightskyblue;
   border: 1px solid lemonchiffon;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 6;
+}
+.cta:hover,
+.cta > a:hover {
+opacity:.8;
+}
+.secondary {
+  background-color: transparent;
+  border: 2px solid lightskyblue;
+  border-radius: 20px;
+  padding: 0 1em;
+  vertical-align: middle;
+}
+.secondary:hover,
+.secondary > a:hover {
+  background-color: lightskyblue;
 }
 div.uls {
   display: flex;
@@ -132,9 +155,9 @@ ul {
   background-color: lemonchiffon;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-bottom: 2em; 
+  margin-bottom: 2em;
   flex-flow: wrap;
-  box-shadow: 3px 5px 3px rgb(155, 145, 52);
+  box-shadow: 3px 5px 3px rgb(199, 191, 118);
 }
 .pb {
   padding-top: 2em;
@@ -142,49 +165,52 @@ ul {
   margin: auto;
 }
 .skills {
-    width: 90%;
-}
-/*section.skills.pb > h3 {
   width: 90%;
-  margin: auto;
-  padding-bottom: 1.25em;
-}*/
-
+}
 /*Medium Devices*/
 @media (min-width: 768px) {
-h1.header {
-  font-size: 1.5em;
-}
-/* Resize button */
-button.cta {
-  justify-self: center;
-}
-section.about {
-  width: 90%;
-}
+  div.full { 
+    height: 80vh;
+  }
+  h1.header {
+    font-size: 1.5em;
+  }
+  hr {
+    width: 90%;
+  }
+  section.about {
+    width: 90%;
+  }
 }
 /*Large Devices*/
 @media (min-width: 992px) {
-div.full {
-  background-image: url('../assets/img/joshua-aragon-edited-medium.jpg');
-}
-h1.header {
-  font-size: 2em;
-}
-section.about, section.skills {
-  width: 80%;
-}
+  div.full {
+    background-image: url("../assets/img/joshua-aragon-edited-medium.jpg");
+  }
+  h1.header {
+    font-size: 2em;
+  }
+  section.about,
+  section.skills {
+    width: 80%;
+  }
+  hr {
+    width: 80%;
+  }
 }
 /*Extra Large Devices*/
 @media (min-width: 1200px) {
-div.full{
-  background-image: url('../assets/img/joshua-aragon-edited-large.jpg');
-}
-h1.header {
-  font-size: 2.3em;
-}
-button.cta {
-  height: 70px;
-}
+  div.full {
+    height: 100vh;
+    background-image: url("../assets/img/joshua-aragon-edited-large.jpg");
+  }
+  h1.header {
+    font-size: 2.3em;
+  }
+  .cta {
+    height: 60px;
+    width: 200px;
+    
+  }
 }
 </style>
