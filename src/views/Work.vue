@@ -8,10 +8,10 @@
       </div>
       <div class="btns">
         <button>
-          <a rel="preconnect" href="https://affordableelegancecateringllc.com/">View Site</a>
+          <a rel="preconnect" target="_blank" href="https://affordableelegancecateringllc.com/">View Site</a>
         </button>
         <button type="disabled" class="disabled">
-          <a rel="preconnect" href="#">View Code</a>
+          <a rel="preconnect" target="_blank" href="#">View Code</a>
         </button>
       </div>
     </div>
@@ -24,10 +24,10 @@
       </div>
       <div class="btns">
         <button>
-          <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
+          <a rel="preconnect" target="_blank" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
         </button>
         <button>
-          <a rel="preconnect" href="https://zipcodefinder-b1559.web.app/#/">View Code</a>
+          <a rel="preconnect" target="_blank" href="https://zipcodefinder-b1559.web.app/#/">View Code</a>
         </button>
       </div>
     </div>
@@ -40,10 +40,10 @@
       </div>
       <div class="btns">
         <button>
-          <a rel="preconnect" href="#">View Site</a>
+          <a rel="preconnect" target="_blank" href="https://frosty-elion-9792b8.netlify.com/">View Site</a>
         </button>
         <button>
-          <a rel="preconnect" href="#">View Code</a>
+          <a rel="preconnect" target="_blank" href="https://github.com/AaminDavis/mosesphotoportfolio">View Code</a>
         </button>
       </div>
     </div>
@@ -56,10 +56,10 @@
       </div>
       <div class="btns">
         <button>
-          <a rel="precommect" href="#">View Site</a>
+          <a rel="preconnect" target="_blank"  href="https://www.aamindavis.com/">View Site</a>
         </button>
         <button>
-          <a rel="preconnect" href="#">View Code</a>
+          <a rel="preconnect" target="_blank"  href="#">View Code</a>
         </button>
       </div>
     </div>
