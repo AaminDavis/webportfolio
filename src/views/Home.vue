@@ -18,7 +18,7 @@
       <p>After I finalize the UX/UI design, I produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
       <h4>Full-stack Development</h4>
       <p>For some applications and websites, I create both the front-end and back-end. The combination of both the front-end, back-end, databases, and several other skill sets to create an all-inclusive application/website.</p>
-      <button class="secondary"><a href="https://drive.google.com/open?id=1T0FEWCIMQbxpRIeor0jpoSuIi1BjvpDp">View Resume</a></button>
+      <button class="secondary"><a href="https://drive.google.com/open?id=1T0FEWCIMQbxpRIeor0jpoSuIi1BjvpDp" target="_blank">View Resume</a></button>
       
     </section>
     <hr />
