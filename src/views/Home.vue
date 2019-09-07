@@ -129,11 +129,10 @@ h1.header {
   grid-row-start: 5;
   grid-row-end: 6;
 }
-/*
-.cta:hover,
-.cta > a:hover {
+
+.cta:hover {
 opacity:.8;
-}*/
+}
 .secondary {
   background-color: transparent;
   border: 2px solid lightskyblue;
