@@ -200,6 +200,7 @@ ul {
   }
 }
 /*Extra Large Devices*/
+/*
 @media (min-width: 1200px) {
   div.full {
     height: 100vh;
@@ -214,4 +215,5 @@ ul {
     
   }
 }
+*/
 </style>
