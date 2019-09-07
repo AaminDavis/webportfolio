@@ -27,7 +27,7 @@
           <a rel="preconnect" target="_blank" href="https://zipcodefinder-b1559.web.app/#/">View Site</a>
         </button>
         <button>
-          <a rel="preconnect" target="_blank" href="https://zipcodefinder-b1559.web.app/#/">View Code</a>
+          <a rel="preconnect" target="_blank" href="#">View Code</a>
         </button>
       </div>
     </div>
@@ -59,7 +59,7 @@
           <a rel="preconnect" target="_blank"  href="https://www.aamindavis.com/">View Site</a>
         </button>
         <button>
-          <a rel="preconnect" target="_blank"  href="#">View Code</a>
+          <a rel="preconnect" target="_blank"  href="https://github.com/AaminDavis/webportfolio">View Code</a>
         </button>
       </div>
     </div>
