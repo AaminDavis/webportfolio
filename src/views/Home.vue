@@ -188,9 +188,9 @@ ul {
   div.full {
     background-image: url("../assets/img/joshua-aragon-edited-medium.jpg");
   }
-  h1.header {
+  /*h1.header {
     font-size: 2em;
-  }
+  }*/
   section.about,
   section.skills {
     width: 80%;
