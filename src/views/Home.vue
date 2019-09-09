@@ -106,8 +106,8 @@ div.after {
   background-color: rgba(0, 0, 0, 0.7);
 }
 h1.header {
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1rem;
+  line-height: 1.2rem;
   align-self: center;
   color: white;
   font-weight: bold;
@@ -128,9 +128,8 @@ h1.header {
   grid-row-start: 5;
   grid-row-end: 6;
 }
-
 .cta:hover {
-opacity:.8;
+  background: rgba(135,206,250, .6);
 }
 .secondary {
   background-color: transparent;
