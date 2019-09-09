@@ -1,7 +1,7 @@
 <template>
   <div class="page-bg">
     <div class="form-bg">
-      <form  name="interestForm" data-netlify="true">
+      <form  name="interestForm" method="POST" data-netlify="true">
         <h2 class="contactheading">Let's Chat</h2>
         <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
         <div class="form-group">
