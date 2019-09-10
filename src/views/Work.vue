@@ -3,7 +3,7 @@
     <div class="container project">
       <h5>Project One</h5>
       <div class="main_proj_cont">
-        <img :src="require('@/assets/img/aeScreenshot.png')" alt="Affordable Elegance, LLC Home Page" />
+        <img src="@/assets/img/aeScreenshot.png" alt="Affordable Elegance, LLC Home Page" />
         <p>For this project, I redesigned the clients' website and assessed whether it would be beneficial to continue using the current CMS or utilize a different one. I also was tasked with improving the SEO of the site.</p>
       </div>
       <div class="btns">
@@ -63,20 +63,6 @@
         </button>
       </div>
     </div>
-    <!--<hr />
-    <dgit aasfafaiv class="container project">
-      <h5>Project Five</h5>
-      <img src="@/img/AE_screenshot.PNG" alt="">
-      <p>Coming Soon</p>
-      <div class="btns">
-        <button>
-          <a rel="preconnect" href="#">View Site</a>
-        </button>
-        <button>
-          <a rel="preconnect" href="#">View Code</a>
-        </button>
-      </div>
-    </div>-->
   </section>
 </template>
 

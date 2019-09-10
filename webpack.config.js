@@ -1,4 +1,13 @@
+const path = require('path')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+
 module.exports = {
+  plugins: [
+   new  PrerenderSPAPlugin(
+      path.join(__dirname, 'dist/'),
+      ['/', '/home', '/work', '/contact'],
+    )
+  ],
   module: {
     rules: [
         {
