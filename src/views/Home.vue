@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-<style scoped rel="preload">
+<style scoped>
 div.background {
   margin: auto;
 }
@@ -99,34 +99,34 @@ div.after {
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin: auto;
   padding: 20px;
   font-size: 1.2em;
   line-height: 1.4em;
   background-color: rgba(0, 0, 0, 0.7);
+  align-self: center;
+  justify-self: center;
 }
 h1.header {
   font-size: 1rem;
-  line-height: 1.2rem;
   align-self: center;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 .cta {
-  align-self: center;
-  justify-self: center;
   position: relative;
   height: 50px;
   width: 180.5px;
   padding: 0 1em;
-  border-radius: 20px;
+  border-radius: 2em;
   background-color: lightskyblue;
   border: 1px solid lemonchiffon;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 6;
+  align-self: center;
+  justify-self: center;
 }
 .cta:hover {
   background: rgba(135,206,250, .6);

@@ -52,7 +52,7 @@
       <h5>Project Four</h5>
       <div class="main_proj_cont">
       <img src="@/assets/img/localhost_8080_.png" alt="Aamin Withrow-Davis Portfolio">
-      <p>Coming Soon</p>
+      <p> I designed and developed this web site to use as my online portfolio.</p>
       </div>
       <div class="btns">
         <button>

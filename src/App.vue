@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style lang="css" rel="preload">
+<style lang="css">
 #app {
   font-family: "Adamina", serif;
   -webkit-font-smoothing: antialiased;

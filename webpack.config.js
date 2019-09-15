@@ -2,9 +2,10 @@ const path = require('path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
+  devtool: 'source-map',
   plugins: [
    new  PrerenderSPAPlugin(
-      path.join(__dirname, 'dist/'),
+      path.join(__dirname, 'dist'),
       ['/', '/home', '/work', '/contact'],
     )
   ],
