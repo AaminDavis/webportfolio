@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
    new  PrerenderSPAPlugin(
       path.join(__dirname, 'dist'),
-      ['/', '/home', '/work', '/contact'],
+      [ '/contact'],
     )
   ],
   module: {

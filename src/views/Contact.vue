@@ -1,13 +1,18 @@
 <template>
   <div class="page-bg">
     <div class="form-bg">
-      <form  name="interestForm" method="POST" data-netlify="true">
+      <form name="vue-contact" method="post" data-netlify="true">
         <h2 class="contactheading">Let's Chat</h2>
         <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
+
+        <input type="hidden" name="form-name" value="vue-contact" hidden>
         <div class="form-group">
-          <label for="InputName">Name</label>
+          <label for="InputFullName">Name</label>
           <input
-            type="name"
+            type="text"
+            name="name"
+            value="name"
+            v-model.lazy="name"
             class="form-control form-control-large"
             id="InputFullName"
             placeholder="Full Name"
@@ -17,6 +22,9 @@
           <label for="exampleInputEmail1">Email address</label>
           <input
             type="email"
+            name="email"
+            value="email"
+            v-model.lazy="email"
             class="form-control form-control-large"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
@@ -32,6 +40,9 @@
           <textarea
             class="form-control form-control-large"
             id="FormControlTextarea1"
+            name="message"
+            value="message"
+            v-model.lazy="message"
             rows="5"
             placeholder="Message"
           ></textarea>
@@ -56,7 +67,15 @@
 <script>
 export default {
   name: "Contact",
-  components: {}
+  components: {},
+  inheritAttrs: false,
+  data() { 
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
 };
 </script>
 
