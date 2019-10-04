@@ -10,12 +10,12 @@
     </div>
     <section class="about pb">
       <h3>About</h3>
-      <p>Hi, I'm Aamin. I am currently a freelance Web Designer and Developer based in Pittsburgh, PA. I primarily work on front-end projects, however, I also create full-stack web apps and websites. I love working on challenging projects. I'm also interested in learning new web technologies. If you are interested in hiring me, contact me <a href="mailto:aaminwd@gmail.com">via email.</a></p>
+      <p>Hi, I'm Aamin. I am currently a freelance Web Designer and Developer based out of Pittsburgh, PA. I primarily work on front-end projects, however, I also create full-stack web apps and websites. I love working on new challenging projects and integrating new technologies. If you are interested in hiring me, contact me <a href="mailto:aaminwd@gmail.com">via email.</a></p>
       <h3>Services</h3>
       <h4>UX/UI Design</h4>
-      <p>Before starting to build applications and web sites, I first work on creating the information structure and layout, going through numerous iterations as needed. Once that is complete I then start working on creating and functional and alluring user experience.</p>
+      <p>Before I develop a website or application, I work on creating its information structure and layout, going through numerous iterations. Once that is complete, I then start working on creating and functional and alluring user experience.</p>
       <h4>Front-End Development</h4>
-      <p>After I finalize the UX/UI design, I produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
+      <p>After I finalize the UX/UI design, I then produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
       <h4>Full-stack Development</h4>
       <p>For some applications and websites, I create both the front-end and back-end. The combination of both the front-end, back-end, databases, and several other skill sets to create an all-inclusive application/website.</p>
       <button class="secondary"><a href="https://drive.google.com/open?id=1qGGwxp1E_cSidG5fmow6sR9nwhIRTnP0" target="_blank">View Resume</a></button>
@@ -40,7 +40,6 @@
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>PHP</li>
           <li>WordPress</li>
           <li>Vue JS</li>
           <li>Angular 5+</li>
@@ -52,6 +51,7 @@
           <li>Firebase</li>
           <li>MongoDB</li>
           <li>SQL</li>
+          <li>PHP</li>
           <li>PHPMyAdmin</li>
           <li>Node.JS</li>
           <li>ExpressJS</li>
@@ -119,8 +119,8 @@ h1.header {
   width: 180.5px;
   padding: 0 1em;
   border-radius: 2em;
-  background-color: lightskyblue;
-  border: 1px solid lemonchiffon;
+  background-color: lemonchiffon;
+  border: 1px solid lightskyblue;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 5;
@@ -129,14 +129,15 @@ h1.header {
   justify-self: center;
 }
 .cta:hover {
-  background: rgba(135,206,250, .6);
+  background: rgba(255, 250, 204, .6);
 }
 .secondary {
   background-color: transparent;
   border: 2px solid lightskyblue;
   border-radius: 20px;
   padding: 0 1em;
-  vertical-align: middle;
+  position: relative;
+  left: 40%;
 }
 .secondary:hover,
 .secondary > a:hover {
@@ -180,6 +181,9 @@ ul {
   section.about {
     width: 90%;
   }
+  .secondary {
+    position: unset;
+  }
 }
 /*Large Devices*/
 @media (min-width: 992px) {
@@ -209,7 +213,6 @@ ul {
   .cta {
     height: 60px;
     width: 200px;
-    
   }
 }
 </style>

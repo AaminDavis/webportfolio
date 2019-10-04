@@ -57,8 +57,11 @@
           <h3 class="title">
             <strong>Contact</strong>
           </h3>
-          <p>Email Me</p>
-          <p class="container">
+          <p>
+            <i class="fab fa-github-square"></i>
+            <a href="https://github.com/AaminDavis">GitHub</a>
+          </p>
+          <p>
             <i class="fas fa-envelope"></i>
             <a href="mailto:aaminwd@gmail.com">Aaminwd@gmail.com</a>
           </p>
@@ -121,7 +124,7 @@ h4 {
   text-transform: uppercase;
   text-align: center;
 }
-/* Buttons*/
+/* Buttons */
 button {
   line-height: 32px;
 }
@@ -152,20 +155,22 @@ button > strong > a:hover {
   background-color: lightskyblue;
 }
 .navbar .navbar-toggler {
-color: black;
 border-color: transparent;
 }
-.navbar-brand {
-  color: black;
+.navbar .nav-item .nav-link {
+  color: #2c3e50;
 }
-.nav-item {
-  font-size: 1em;
-}
-.nav-link:hover
-.nav-link:focus
+/* fix this 
+.navbar .nav-item .nav-link:active .router-link-exact-active { 
+  color: #000;
+  font-weight: bolder;
+  outline: green solid 1px;
+}*/
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus
 {
 	cursor: pointer;
-	text-decoration: none;
+	text-decoration: underline;
 }
 /* Footer Content */
 footer {
@@ -213,7 +218,19 @@ a[href^="mailto:"] {
   color: #000;
   text-decoration: underline;
 }
-
+.fa-envelope {
+  transform: scale(1.1);
+}
+.fa-github-square {
+  transform: scale(1.3);
+}
+a[href^="https://github"] {
+  color: #000;
+  text-decoration: none;
+}
+a[href^="https://github"]:hover {
+  text-decoration: underline;
+}
 /** Media Queries **/
 
 /*Medium Devices*/
