@@ -71,7 +71,7 @@ export default {
 };
 </script> 
 
-<style scoped>
+<style scoped rel="preload">
 section.work {
   padding: 2em 0;
 }
