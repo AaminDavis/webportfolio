@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-lsb">
+      <!-- Replace the bottom line with a router l ink-->
       <a class="navbar-brand" href="#">Aamin Withrow-Davis</a>
       <button
         class="navbar-toggler"
