@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "home-page",
   components: {}
 };
 </script>

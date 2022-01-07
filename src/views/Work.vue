@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name: "Work",
+  name: "work-page",
   components: {}
 };
 </script> 
