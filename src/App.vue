@@ -25,7 +25,7 @@
             <router-link class="nav-link" to="/Work">Work</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://drive.google.com/open?id=1qGGwxp1E_cSidG5fmow6sR9nwhIRTnP0" target="_blank" rel="noreferrer">Resume</a>
+            <a class="nav-link" href="https://drive.google.com/file/d/1zpJRmuSnhF2VjmNZp3Qogjgc-h3NOPi6/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/contact" tabindex="-1">Contact</router-link>
