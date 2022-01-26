@@ -18,7 +18,7 @@
       <p>After I finalize the UX/UI design, I then produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
       <h4>Full-stack Development</h4>
       <p>For some applications and websites, I create both the front-end and back-end. The combination of both the front-end, back-end, databases, and several other skill sets to create an all-inclusive application/website.</p>
-      <button class="secondary"><a href="https://drive.google.com/file/d/1zpJRmuSnhF2VjmNZp3Qogjgc-h3NOPi6/view?usp=sharing" target="_blank" rel="noreferrer">View Resume</a></button>
+      <button class="secondary"><a href="" target="_blank" rel="noreferrer">View Resume</a></button>
     </section>
     <hr />
     <section class="skills pb">
@@ -29,7 +29,7 @@
             <i class="fas fa-pen-nib"></i> Designer
           </legend>
           <li>Figma</li>
-          <li>Axzure RP</li>
+          <!-- <li>Axzure RP</li> -->
           <li>Invision Studio</li>
           <li>Adobe XD</li>
         </ul>
@@ -40,7 +40,7 @@
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>WordPress</li>
+          <!-- <li>WordPress</li> -->
           <li>Vue JS</li>
           <li>Angular 5+</li>
         </ul>
@@ -51,8 +51,8 @@
           <li>Firebase</li>
           <li>MongoDB</li>
           <li>SQL</li>
-          <li>PHP</li>
-          <li>PHPMyAdmin</li>
+          <!-- <li>PHP</li> -->
+          <!--  <li>PHPMyAdmin</li> --> 
           <li>Node.JS</li>
           <li>ExpressJS</li>
         </ul>
@@ -60,7 +60,7 @@
           <legend>
             <i class="fas fa-toolbox"></i> Tool Kit
           </legend>
-          <li>Sublime Text</li>
+          <!-- <li>Sublime Text</li> -->
           <li>VS Code</li>
           <li>Git</li>
           <li>Github</li>
