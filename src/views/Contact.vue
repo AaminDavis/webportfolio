@@ -1,7 +1,8 @@
 <template>
   <div class="page-bg">
     <div class="form-bg">
-      <form name="vue-contact" method="post" data-netlify="true">
+      <form name="vue-contact" method="post" data-netlify="true"
+      data-netlify-honeypot="bot-field">
         <h2 class="contactheading">Let's Chat</h2>
         <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
 
@@ -53,14 +54,13 @@
         </button>
       </form>
       <section class="right">
-        <p>Collaborate with me:</p>
+        <h5>Collaborate with me:</h5>
         <p>
           <a href="mailto:aaminwd@gmail.com">aaminwd@gmail.com</a>
         </p>
         <img class="svg" src="../assets/img/waiting-contact.svg" />
       </section>
     </div>
-    <hr class="clear" />
   </div>
 </template>
 
@@ -88,6 +88,7 @@ h2.contactheading {
 h3.formheading {
   text-align: left;
   font-size: 1em;
+  padding-bottom: 30px;
 }
 div.page-bg {
   background-color: whitesmoke;
@@ -128,9 +129,13 @@ hr {
 /** Media Queries **/
 
 @media (min-width: 768px) {
-  h3.formheading {
+  /*h3.formheading {
     margin: 1.4rem 0;
     margin-left: 2rem;
+  }*/
+  h5 {
+    padding: 1rem 0;
+    text-decoration: underline;
   }
   section.right {
     display: inline;
@@ -139,9 +144,11 @@ hr {
   img.svg {
     max-width: 90%;
     min-height: 200px;
+    margin: auto;
   }
   form {
-    max-width: 560px;
+    /*max-width: 560px;*/
+    max-width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -149,10 +156,14 @@ hr {
     margin: auto 0;
   }
   form {
-    padding: 0em 3em;
+    padding: 0 3em;
     max-width: 50%;
   }
 }
 @media (min-width: 1200px) {
+  div.form-bg {
+    max-width: 90%;
+    margin: auto;
+  }
 }
 </style>

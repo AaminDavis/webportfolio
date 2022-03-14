@@ -93,13 +93,14 @@ h5 {
 img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 p {
   margin-top: 0.5em;
 }
 button {
   background-color: lightskyblue;
-  border: 1px solid #000;
+  border: 2px solid #000;
   width: 8em;
   height: 3em;
   border-radius: 2em;
@@ -116,16 +117,6 @@ button > a:hover {
 .code-btn {
   background-color: transparent;
 }
-/*
-button:disabled,
-button.disabled,
-button.disabled > a {
-  opacity: .7;
-  cursor: none;
-}
-*/
-/* Add grid to section in order to make it responsive */
-
 @media (min-width: 768px) {
   section.work {
     padding: 2rem 0;
@@ -144,7 +135,7 @@ button.disabled > a {
     align-content: space-between;
   }
   .btns {
-    xpadding: 2em 0em;
+    /*padding: 2em 0em;*/
     align-items: flex-end;
   }
   hr {

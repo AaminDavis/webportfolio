@@ -2,7 +2,9 @@
   <div class="background">
     <div class="full">
       <div class="after">
+        <transition name="wobble" appear>
         <h1 class="header">A Yinzer, Obsessed with Web Design and Development</h1>
+        </transition>
       </div>
       <button class="cta">
         <router-link to="/work"><strong>View Work</strong></router-link>
@@ -18,12 +20,12 @@
       <p>After I finalize the UX/UI design, I then produce the visual components of the application/website. Using HTML, CSS, Javascript, and frameworks such as Vue.js and Angular, I create applications and websites. I also integrate CMS solutions whenever appropriate.</p>
       <h4>Full-stack Development</h4>
       <p>For some applications and websites, I create both the front-end and back-end. The combination of both the front-end, back-end, databases, and several other skill sets to create an all-inclusive application/website.</p>
-      <button class="secondary"><a href="" target="_blank" rel="noreferrer">View Resume</a></button>
+      <button class="secondary"><a href="https://drive.google.com/file/d/1zpJRmuSnhF2VjmNZp3Qogjgc-h3NOPi6/view" target="_blank" rel="noreferrer">View Resume</a></button>
     </section>
     <hr />
     <section class="skills pb">
       <h3>Skills</h3>
-      <div class="uls">
+          <div class="uls">
         <ul>
           <legend>
             <i class="fas fa-pen-nib"></i> Designer
@@ -120,7 +122,7 @@ h1.header {
   padding: 0 1em;
   border-radius: 2em;
   background-color: lemonchiffon;
-  border: 1px solid lightskyblue;
+  border: 3px solid lightskyblue;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 5;
@@ -129,7 +131,10 @@ h1.header {
   justify-self: center;
 }
 .cta:hover {
-  background: rgba(255, 250, 204, .6);
+  /* background: rgba(255, 250, 204, .6); */
+  background: lightskyblue;
+  border: 2px solid lemonchiffon;
+  transition: all .45s cubic-bezier(.785, .135, .15, .86);
 }
 .secondary {
   background-color: transparent;
@@ -137,11 +142,12 @@ h1.header {
   border-radius: 20px;
   padding: 0 1em;
   position: relative;
-  left: 40%;
+  left: calc(50% - (16px + 2px + (103.391px / 2))); 
 }
 .secondary:hover,
 .secondary > a:hover {
   background-color: lightskyblue;
+  transition: all .45s cubic-bezier(.785, .135, .15, .86);
 }
 div.uls {
   display: flex;
@@ -152,6 +158,7 @@ div.uls {
 ul {
   width: 300px;
   content: center;
+  border-radius: 20px;
   background-color: lemonchiffon;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -159,13 +166,47 @@ ul {
   flex-flow: wrap;
   box-shadow: 3px 5px 3px rgb(199, 191, 118);
 }
+/*
+ul:after:hover {
+ animation: wobble 2s ease 0s;
+ -webkit-backface-visibility: hidden;
+ -webkit-transform: translate3d(0,0,0);
+} */
 .pb {
   padding-top: 2em;
   padding-bottom: 6em;
   margin: auto;
 }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.wobble-enter-active,
+.wobble-leave-active
+{
+  animation: wobble 1.4s ease .4s;
+}
+.wobble-enter-from,
+.wobble-leave-from {
+  /* remove this maybe? */
+  animation: wobble 1.4s ease .4s;
+}
+@keyframes wobble {
+  0% { transform: translateY(-100px); opacity: 0; }
+  50% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(8px); }
+  70% { transform: translateY(-8px); }
+  80% { transform: translateY(4px); }
+  90% { transform: translateY(-4); } 
+  100% { transform: translateY(0); }
+}
 .skills {
-  width: 90%;
+  /* Change this from 90% to 80% */
+  width: 90%; 
 }
 /*Medium Devices*/
 @media (min-width: 768px) {
@@ -179,7 +220,8 @@ ul {
     width: 90%;
   }
   section.about {
-    width: 90%;
+    /* Note the value here */
+    width: 90%
   }
   .secondary {
     position: unset;
