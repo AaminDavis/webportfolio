@@ -5,7 +5,6 @@
       data-netlify-honeypot="bot-field">
         <h2 class="contactheading">Let's Chat</h2>
         <h3 class="formheading">Lets talk about your project and how I can help it come to fruition!</h3>
-
         <input type="hidden" name="form-name" value="vue-contact" hidden>
         <div class="form-group">
           <label for="InputFullName">Name</label>
@@ -127,7 +126,6 @@ hr {
   clear: both;
 }
 /** Media Queries **/
-
 @media (min-width: 768px) {
   /*h3.formheading {
     margin: 1.4rem 0;
