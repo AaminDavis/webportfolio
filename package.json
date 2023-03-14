@@ -9,7 +9,7 @@
     "report": "vue-cli-service build --report"
   },
   "dependencies": {
-    "core-js": "^3.27.1",
+    "core-js": "^3.29.1",
     "vue": "^2.7.14",
     "vue-router": "^3.6.5"
   },
