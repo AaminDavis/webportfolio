@@ -9,8 +9,8 @@
     "report": "vue-cli-service build --report"
   },
   "dependencies": {
-    "core-js": "^3.29.1",
-    "vue": "^2.7.14",
+    "core-js": "^3.35.1",
+    "vue": "^2.7.16",
     "vue-router": "^3.6.5"
   },
   "devDependencies": {
@@ -23,8 +23,8 @@
     "file-loader": "^4.3.0",
     "node-sass": "^7.0.3",
     "url-loader": "^2.3.0",
-    "vue-template-compiler": "^2.7.14",
-    "webpack": "^4.46.0"
+    "vue-template-compiler": "^2.7.16",
+    "webpack": "^4.47.0"
   },
   "eslintConfig": {
     "root": true,
